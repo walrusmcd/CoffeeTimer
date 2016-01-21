@@ -214,5 +214,11 @@ namespace CoffeeTimer
             this.NumberButton.Content = n.ToString();
             SavedTuple.DeltaD = n * 0.001;
         }
+
+        private void textBlock_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            // and now navigate to our test page
+            this.Frame.Navigate(typeof(BlankPage1));
+        }
     }
 }

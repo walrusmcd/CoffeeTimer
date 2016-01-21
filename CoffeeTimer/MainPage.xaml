@@ -28,7 +28,7 @@
             </StackPanel>
         </StackPanel>
         <StackPanel Grid.Row="1" VerticalAlignment="Center">
-            <TextBlock Name="textBlock" Text="{x:Bind Path=NumberOfSeconds, Mode=OneWay}" FontSize="96" FontWeight="Bold" TextAlignment="Center" />
+            <TextBlock Name="textBlock" Text="{x:Bind Path=NumberOfSeconds, Mode=OneWay}" FontSize="96" FontWeight="Bold" TextAlignment="Center" Tapped="textBlock_Tapped"/>
         </StackPanel>
         <StackPanel Grid.Row="2" VerticalAlignment="Bottom">
             <ProgressBar Name="TimerProgressBar" Value="{x:Bind Path=NumberOfSeconds, Mode=OneWay}" Height="10" Maximum="40" Margin="10,0,10,5"/>
